@@ -13,7 +13,7 @@ Case of
 		var $oData : Object
 		
 		$oData:=New object:C1471
-		$oData.disco:="Hagrid"
+		$oData.happy:="Halloween"
 		$oData.group:="4DMethod"
 		
 		var $oFile : 4D:C1709.File

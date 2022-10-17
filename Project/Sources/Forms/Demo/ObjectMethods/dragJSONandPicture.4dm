@@ -13,7 +13,7 @@ Case of
 		var $oData : Object
 		
 		$oData:=New object:C1471
-		$oData.disco:="Hagrid"
+		$oData.happy:="Halloween"
 		$oData.group:="4DMethod"
 		
 		SET TEXT TO PASTEBOARD:C523(JSON Stringify:C1217($oData; *))
@@ -22,7 +22,7 @@ Case of
 		var $xBlob : Blob
 		
 		// https://doc.4d.com/4Dv19/4D/19.4/File-and-folder-object-pathnames.300-6022906.en.html
-		$oFile:=File:C1566("/RESOURCES/discoHagrid.jpeg")
+		$oFile:=File:C1566("/RESOURCES/4DMethod Logo.png")
 		
 		DOCUMENT TO BLOB:C525($oFile.platformPath; $xBlob)
 		

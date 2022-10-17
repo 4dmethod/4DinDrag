@@ -14,7 +14,7 @@ Case of
 		var $gPic : Picture
 		
 		// https://doc.4d.com/4Dv19/4D/19.4/File-and-folder-object-pathnames.300-6022906.en.html
-		$oFile:=File:C1566("/RESOURCES/discoHagrid.jpeg")
+		$oFile:=File:C1566("/RESOURCES/4DMethod Logo.png")
 		
 		READ PICTURE FILE:C678($oFile.platformPath; $gPic)
 		
@@ -25,7 +25,7 @@ Case of
 		var $gPic : Picture
 		var $lWidth : Integer
 		
-		$tText:="Dragging: Disco Hagrid..."
+		$tText:="Dragging: Some products..."
 		$lWidth:=200
 		$tColor:="darkorange:50"
 		
