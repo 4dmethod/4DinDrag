@@ -73,7 +73,7 @@
 					"fontTheme": "main",
 					"fontSize": 24
 				},
-				"Input": {
+				"oldDestination": {
 					"type": "input",
 					"left": 261,
 					"top": 119,
@@ -84,7 +84,7 @@
 					"events": [
 						"onDrop"
 					],
-					"method": "ObjectMethods/Input.4dm"
+					"method": "ObjectMethods/oldDestination.4dm"
 				}
 			}
 		},
@@ -609,6 +609,32 @@
 					"top": 240,
 					"width": 533,
 					"height": 4
+				},
+				"Input": {
+					"type": "input",
+					"left": 247,
+					"top": 421,
+					"width": 51,
+					"height": 17,
+					"dataSource": "Form:C1466.data.length",
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"sizingY": "move"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Clear",
+					"top": 421,
+					"left": 177,
+					"width": 62,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"sizingY": "move",
+					"method": "ObjectMethods/Button2.4dm"
 				}
 			}
 		},
@@ -630,7 +656,7 @@
 					"top": 118,
 					"width": 173,
 					"height": 33,
-					"dataSource": "\"Drag Big Data Asynchronously\"",
+					"dataSource": "\"Drag Big Data\"",
 					"enterable": false,
 					"focusable": false,
 					"contextMenu": "none",
@@ -883,7 +909,7 @@
 			}
 		}
 	],
-	"geometryStamp": 508,
+	"geometryStamp": 520,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

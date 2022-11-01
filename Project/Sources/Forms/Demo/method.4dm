@@ -21,5 +21,6 @@ Case of
 		tOldDraggableTitle:="Old Style"
 		
 		Form:C1466.data:=New collection:C1472
+		Form:C1466.fatData:=New collection:C1472
 		
 End case 

@@ -33,17 +33,35 @@ Case of
 				
 				BLOB TO VARIABLE:C533($xBlob; $eData)
 				
-				Form:C1466.data.push($eData)
+				If (FORM Event:C1606.row=Null:C1517)
+					// to put at the end
+					Form:C1466.data.push($eData)
+					
+				Else 
+					// to put at drop row
+					Form:C1466.data.insert(FORM Event:C1606.row-1; $eData)
+					
+					LISTBOX SELECT ROW:C912(*; "dataList"; FORM Event:C1606.row)
+					Form:C1466.data:=Form:C1466.data
+					
+				End if 
 				
 			: (Pasteboard data size:C400("4DMethodSelection")>0)
 				GET PASTEBOARD DATA:C401("4DMethodSelection"; $xBlob)
 				
 				BLOB TO VARIABLE:C533($xBlob; $cData)
 				
-				For each ($eData; $cData)
-					Form:C1466.data.push($eData)
+				If (FORM Event:C1606.row=Null:C1517)
+					Form:C1466.data.combine($cData)
 					
-				End for each 
+				Else 
+					Form:C1466.data.combine($cData; FORM Event:C1606.row-1)
+					
+				End if 
+				
+				LISTBOX SELECT ROWS:C1715(*; "dataList"; $cData)
+				Form:C1466.data:=Form:C1466.data
+				
 				
 		End case 
 		

@@ -21,6 +21,7 @@ Case of
 		SET PICTURE TO PASTEBOARD:C521($gPic)
 		
 		
+		// also set some drag icon svg text
 		var $tText; $tSvgRef; $tTextAreaRef : Text
 		var $gPic : Picture
 		var $lWidth : Integer
