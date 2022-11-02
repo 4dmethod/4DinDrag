@@ -904,12 +904,13 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button1.4dm"
+					"method": "ObjectMethods/Button1.4dm",
+					"sizingY": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 520,
+	"geometryStamp": 521,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

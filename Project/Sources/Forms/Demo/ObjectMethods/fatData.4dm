@@ -42,7 +42,7 @@ Case of
 					$oData.objectName; $oSignal)
 				
 				// https://doc.4d.com/4Dv19/4D/19.4/signalwait.305-6023374.en.html
-				$bSignaled:=$oSignal.wait(10)  // seconds
+				$bSignaled:=$oSignal.wait(20)  // seconds
 				
 				Progress QUIT($lProgress)
 				
